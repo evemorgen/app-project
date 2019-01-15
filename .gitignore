@@ -1,6 +1,7 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+*.sw[po]
 *$py.class
 
 # C extensions
@@ -105,3 +106,6 @@ venv.bak/
 
 # own files
 metrics/*
+**/*.csv
+**/*.tar.gz
+
