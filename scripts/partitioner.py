@@ -19,6 +19,6 @@ for i, f in enumerate(metric_files):
         for letter in letters:
             part_file =  letter + ".csv"
             for path, values in letters[letter]:
-                open(f'{directory}/{part_file}', 'a').write(f"{path},{values}")
+                open(f'{directory}/{part_file}', 'a').write(f"{path},{json.dumps(values)}\n")
     except:
         print(f"========= BAD FILE {f} ===========")
